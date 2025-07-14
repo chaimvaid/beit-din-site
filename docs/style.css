@@ -1,0 +1,163 @@
+
+body {
+  font-family: "Arial", sans-serif;
+  direction: rtl;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: #006699;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+
+.faq details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #f9f9f9;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq p {
+  margin: 0.5rem 0 0;
+}
+
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+.downloads {
+  list-style: none;
+  padding: 0;
+}
+
+.downloads li {
+  margin-bottom: 0.5rem;
+}
+
+.downloads a {
+  color: #004080;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.downloads-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  direction: rtl;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #800020;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.downloads-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.download-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+}
+
+.download-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.download-card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.download-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
