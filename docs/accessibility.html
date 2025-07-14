@@ -1,0 +1,97 @@
+
+<!-- docs/accessibility.html -->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הצהרת נגישות | בית הדין לממונות חומת שמואל</title>
+
+  <!-- פונט Heebo ותעודת עיצוב -->
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+  <div class="wrapper">
+    <header class="hero">
+      <h1>הצהרת נגישות</h1>
+      <p class="subtitle">בית הדין לממונות חומת שמואל</p>
+      <p>
+        <a href="index.html" class="back-link">← חזרה לעמוד הבית</a>
+      </p>
+    </header>
+
+    <main id="main">
+      <section class="statement-section card fade‑in">
+        <h2>מחויבות לנגישות</h2>
+        <p>
+          אנו רואים חשיבות עליונה בהנגשת האתר לכלל הציבור, לרבות אנשים עם מוגבלויות.
+          מטרתנו היא לאפשר גלישה נגישה, נעימה ופשוטה ככל האפשר, בהתאם לתקן הישראלי 5568
+          ול־WCAG 2.1 ברמה AA.
+        </p>
+      </section>
+
+      <section class="statement-section card fade‑in">
+        <h2>סטנדרטים ושיטות</h2>
+        <ul>
+          <li>מבנה סמנטי (HTML5), כותרות היררכיות ו‑ARIA labels היכן שנדרש.</li>
+          <li>ניווט מלא באמצעות מקלדת, כולל <em>Skip link</em> לתוכן הראשי.</li>
+          <li>ניגוד צבעים העולה על יחס 4.5:1 לטקסט רגיל.</li>
+          <li>פוקוס‑ויזואלי ברור לכל רכיב אינטראקטיבי.</li>
+          <li>תמיכה בקוראי‑מסך נפוצים (NVDA, JAWS, VoiceOver).</li>
+          <li>רספונסיביות מלאה – התאמה למכשירים ניידים וטאבלטים.</li>
+        </ul>
+      </section>
+
+      <section class="statement-section card fade‑in">
+        <h2>עזרי נגישות מומלצים</h2>
+        <p>
+          מומלץ להשתמש בקיצורי‑מקלדת של הדפדפן ובתוכנות קורא‑מסך כגון <strong>NVDA</strong>
+          (חינמי) או <strong>VoiceOver</strong> במכשירי Apple.
+        </p>
+      </section>
+
+      <section class="statement-section card fade‑in">
+        <h2>תוכן שאינו נגיש במלואו</h2>
+        <p>
+          ייתכן כי מסמכים או סרטונים מאתרים חיצוניים אינם נגישים עדיין במאת האחוזים.
+          אנו פועלים להנגישם בהקדם ונשמח לקבל משוב בנושא.
+        </p>
+      </section>
+
+      <section class="statement-section card fade‑in">
+        <h2>פנייה בנושאי נגישות</h2>
+        <p>
+          אם נתקלתם בבעיה כלשהי באתר, נשמח שתעדכנו אותנו ונפעל לתיקון:
+        </p>
+        <ul>
+          <li>אימייל: <a href="mailto:bdmamonot.harhoma@gmail.com">bdmamonot.harhoma@gmail.com</a></li>
+          <li>טלפון: <a href="tel:+972505994081">050‑599‑4081</a></li>
+        </ul>
+        <p>
+          אנא ציינו את כתובת הדף, תיאור הבעיה, סוג הדפדפן והמכשיר בו השתמשתם.
+        </p>
+      </section>
+
+      <section class="statement-section card fade‑in">
+        <h2>תאריך עדכון</h2>
+        <p>עודכן לאחרונה: ‎14 ביולי 2025.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> בית הדין לממונות |
+        <a href="index.html">עמוד הבית</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

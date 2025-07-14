@@ -1,8 +1,15 @@
-
-title: בית דין
-description: עמוד נחיתה לבית דין
+# ----------  GitHub Pages / Jekyll  ----------
+title: "בית דין"
+description: "עמוד נחיתה לבית דין"
+# אומר לגיטהאב לקחת את התוכן מתוך תיקיית docs
 source: docs
+# מבטלים תבנית ברירת‑מחדל כדי לא לדרוס את ה‑HTML המלא שלנו
 theme: null
 
+# ----------  Markdown & Highlighter  ----------
 markdown: kramdown
 highlighter: rouge
+
+# ----------  לוקליזציה  ----------
+# RTL + קידוד עברי
+languages: ["he"]
