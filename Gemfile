@@ -1,11 +1,14 @@
 
 source "https://rubygems.org"
 
-# GitHub Pages includes Jekyll and most standard plugins
+# GitHub Pages (includes many Jekyll plugins)
 gem "github-pages", group: :jekyll_plugins
 
-# Optional live reload for local development
-gem "jekyll-livereload"
+# Extra plugins
+group :jekyll_plugins do
+  # Optional: live reload for local development only
+  # gem "jekyll-livereload"
 
-# Explicitly include sitemap plugin (for GitHub Pages and local builds)
-gem "jekyll-sitemap"
+  # Sitemap generation
+  gem "jekyll-sitemap"
+end
