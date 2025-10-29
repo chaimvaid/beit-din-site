@@ -1,15 +1,32 @@
-# ----------  GitHub Pages / Jekyll  ----------
+# ----------  GitHub Pages / Jekyll  ----------
 title: "בית דין"
 description: "עמוד נחיתה לבית דין"
-# אומר לגיטהאב לקחת את התוכן מתוך תיקיית docs
+# Serve the site from the docs/ directory
 source: docs
-# מבטלים תבנית ברירת‑מחדל כדי לא לדרוס את ה‑HTML המלא שלנו
+# Disable default theme to preserve custom HTML
 theme: null
 
 # ----------  Markdown & Highlighter  ----------
 markdown: kramdown
 highlighter: rouge
 
-# ----------  לוקליזציה  ----------
-# RTL + קידוד עברי
+# ----------  Localization  ----------
 languages: ["he"]
+
+# ----------  Build settings ----------
+# Keep root dev files out of the build output
+exclude:
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Force-include files at the project root so they appear in the site output
+include:
+  - robots.txt
+
+# ----------  Plugins ----------
+# Generates sitemap.xml automatically
+plugins:
+  - jekyll-sitemap
