@@ -1,9 +1,10 @@
+
 # ----------  GitHub Pages / Jekyll  ----------
 title: "בית דין"
 description: "עמוד נחיתה לבית דין"
 # Serve the site from the docs/ directory
 source: docs
-# Disable default theme to preserve custom HTML
+# Use our own HTML/CSS (no theme)
 theme: null
 
 # ----------  Markdown & Highlighter  ----------
@@ -12,6 +13,12 @@ highlighter: rouge
 
 # ----------  Localization  ----------
 languages: ["he"]
+
+# ----------  Site URL (required for correct sitemap) ----------
+# Custom domain used in GitHub Pages → Settings → Pages → Custom domain
+url: https://bdmamonotharhoma.co.il
+# If the site is at the root of the domain, leave baseurl empty:
+baseurl: ""
 
 # ----------  Build settings ----------
 # Keep root dev files out of the build output
@@ -22,11 +29,12 @@ exclude:
   - README.md
   - vendor
 
-# Force-include files at the project root so they appear in the site output
+# Force-include files at repo root so they appear in the site output
 include:
   - robots.txt
+  - CNAME   # (only if you use a custom domain)
 
 # ----------  Plugins ----------
-# Generates sitemap.xml automatically
+# Generates /sitemap.xml automatically
 plugins:
   - jekyll-sitemap
